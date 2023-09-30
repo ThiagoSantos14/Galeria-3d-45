@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top left, white, gray);
+    border: groove 10px black;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img1 img {
+    width: 38vh;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.img1:hover img {
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.img2 img {
+    width: 38vh;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.img2:hover img {
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.img3 img {
+    width: 38vh;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.img3:hover img {
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.img4 img {
+    width: 38vh;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.img4:hover img {
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.img5 img {
+    width: 38vh;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.img5:hover img {
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.width-img img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.img-padrao img {
+    width: 30vh;
+    height: 30vh;
+    cursor: crosshair;
+    filter: blur(10px);
+}
+
+.double-click img{
+    width: 30vh;
+    height: 30vh;
+    filter: none;
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 160vh;
+        overflow: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 29vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    body {
+        height: 160vh;
+        overflow: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 29vh;
+    }
+} 
+
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        height: 160vh;
+        overflow: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30vh;
+    }
+
+    .container img {
+        width: 50vh;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+    body {
+        height: 160vh;
+        overflow: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 29vh;
+    }
+
+    .container img {
+        width: 40vh;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1280px) {
+    .container img {
+        width: 30vh;
+    }
+}
